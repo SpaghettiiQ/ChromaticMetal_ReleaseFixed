@@ -1,0 +1,13 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; padding-top: 1%; padding-right: 1%; padding-bottom: 1%; padding-left: 1%; font-size: 18px; -unity-font-definition: url(&quot;project://database/Assets/UI%20Resources/BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf?fileID=12800000&amp;guid=9f7323af40c61be45a5765e73f8a577a&amp;type=3#BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght&quot;);">
+        <ui:Image name="Img_Logo" source="project://database/Assets/UI%20Resources/Game_Logo.png?fileID=2800000&amp;guid=3a2dd79e214627842813fc989124dd1e&amp;type=3#Game_Logo" scale-mode="ScaleAndCrop" style="flex-direction: column; align-items: flex-start; align-self: flex-start; height: 20%; aspect-ratio: 3.75; margin-left: 4%; margin-top: 0%; margin-bottom: -2%;"/>
+        <ui:VisualElement name="Container" style="flex-direction: column; align-items: flex-start; align-content: auto; width: auto; justify-content: space-evenly; align-self: flex-start; height: 78%; flex-wrap: nowrap; margin-left: 4%; aspect-ratio: auto;">
+            <ui:Button text="Singleplayer" name="Btn_Singleplayer" style="font-size: 28px;"/>
+            <ui:Button text="Multiplayer" name="Btn_Multiplayer" style="font-size: 28px;"/>
+            <ui:Button text="Journal" name="Btn_Journal" style="font-size: 28px;"/>
+            <ui:Button text="Settings" name="Btn_Settings" enabled="false" style="font-size: 24px; display: none;"/>
+            <ui:VisualElement style="flex-grow: 1;"/>
+            <ui:Button text="Quit" name="Btn_Quit" style="font-size: 24px;"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

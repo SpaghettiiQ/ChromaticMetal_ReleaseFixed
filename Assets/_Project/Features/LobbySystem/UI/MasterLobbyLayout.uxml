@@ -1,0 +1,4 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Project/Features/LobbySystem/UI/LobbyStyles.uss?fileID=7433441132597879392&amp;guid=b29e81544d91bef4a9be4b97d65d9633&amp;type=3#LobbyStyles"/>
+    <ui:VisualElement name="ScreenContainer" style="flex-grow: 1; -unity-font-definition: url(&quot;project://database/Assets/UI%20Resources/BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf?fileID=12800000&amp;guid=9f7323af40c61be45a5765e73f8a577a&amp;type=3#BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght&quot;);"/>
+</ui:UXML>

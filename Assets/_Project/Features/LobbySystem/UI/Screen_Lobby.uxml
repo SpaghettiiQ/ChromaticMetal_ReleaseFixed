@@ -1,0 +1,31 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Label text="___&apos;s Lobby" name="Lbl_LobbyName" style="align-self: center; font-size: 24px; -unity-font-definition: url(&quot;project://database/Assets/UI%20Resources/BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf?fileID=12800000&amp;guid=9f7323af40c61be45a5765e73f8a577a&amp;type=3#BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght&quot;);"/>
+    <ui:VisualElement name="Container" style="flex-grow: 1; align-items: center; justify-content: center; align-self: auto; font-size: 18px; -unity-font-definition: url(&quot;project://database/Assets/UI%20Resources/BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf?fileID=12800000&amp;guid=9f7323af40c61be45a5765e73f8a577a&amp;type=3#BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght&quot;);">
+        <ui:VisualElement name="Panel" class="glass-panel" style="flex-grow: 1; aspect-ratio: 1.7; justify-content: flex-start; align-items: stretch; align-self: center; margin-top: 2%; margin-bottom: 3%; padding-top: 30px; padding-right: 30px; padding-bottom: 30px; padding-left: 30px; align-content: flex-start; flex-direction: column;">
+            <ui:VisualElement name="Container_Row" style="flex-grow: 1; align-items: stretch; flex-direction: row; align-self: stretch; align-content: flex-start; justify-content: flex-start; display: flex; font-size: 18px;">
+                <ui:VisualElement name="Container_Column" style="flex-grow: 1;">
+                    <ui:VisualElement name="Container_Row" style="flex-grow: 0; flex-direction: row; align-self: stretch; align-content: flex-start; justify-content: flex-start; display: flex; font-size: 18px; flex-shrink: 1; align-items: flex-start;">
+                        <ui:Image source="project://database/Assets/UI%20Resources/TeamLogoCleansers256x.png?fileID=2800000&amp;guid=265b53c83a414874dac9e0c5190aa1c9&amp;type=3#TeamLogoCleansers256x" name="Team_Logo" style="height: 43px; width: 43px;"/>
+                        <ui:Label text="Cleansers" name="Lbl_Team1" style="font-size: 24px;"/>
+                        <ui:Button text="Join" name="Btn_JoinTeam1" style="margin-left: 49px;"/>
+                    </ui:VisualElement>
+                    <ui:ScrollView name="List_Team1" style="flex-grow: 1; margin-top: 12px; margin-bottom: 12px;"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="Container_Column" style="flex-grow: 1;">
+                    <ui:VisualElement name="Container_Row" style="flex-grow: 0; flex-direction: row; align-self: stretch; align-content: flex-start; justify-content: flex-start; display: flex; font-size: 18px; flex-shrink: 1; align-items: flex-start;">
+                        <ui:Image source="project://database/Assets/UI%20Resources/TeamLogoTHRIVE256x.png?fileID=2800000&amp;guid=691bce7c47ef2aa479d8d18cee665050&amp;type=3#TeamLogoTHRIVE256x" name="Team_Logo" style="height: 43px; width: 43px;"/>
+                        <ui:Label text="THRIVE" name="Lbl_Team2" style="font-size: 24px;"/>
+                        <ui:Button text="Join" name="Btn_JoinTeam2" style="margin-left: 49px;"/>
+                    </ui:VisualElement>
+                    <ui:ScrollView name="List_Team2" style="flex-grow: 1; margin-top: 12px; margin-bottom: 12px;"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Container_Row" style="flex-grow: 0; flex-direction: row; align-self: stretch; align-content: flex-start; justify-content: flex-end; display: flex; font-size: 18px;">
+                <ui:Button text="Leave" name="Btn_Leave" style="font-size: 18px; display: flex; visibility: visible;"/>
+                <ui:VisualElement name="Spacer" style="flex-grow: 1;"/>
+                <ui:Button text="Start" name="Btn_HostStart" style="align-self: flex-end; align-items: stretch; font-size: 18px; display: flex; visibility: visible;"/>
+                <ui:Button text="Ready" name="Btn_Ready" enabled="true" style="align-self: flex-end; align-items: stretch; font-size: 18px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,139 @@
+/* --- GLOBAL TEXT --- */
+.unity-label {
+    color: rgb(240, 240, 240);
+    -unity-font-style: bold;
+}
+
+/* --- BUTTONS (borderless / text-only redesign) --- */
+/* No fill, no border, no radius. The element stays a Button so its full padded
+   area remains the clickable hitbox -- we only strip the visuals. */
+.unity-button {
+    background-color: transparent;
+    color: rgb(200, 200, 200);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    /* Left-align so the hover '>' (prepended to the text) reads as a left marker. */
+    -unity-text-align: middle-left;
+    /* The whole padded box is the clickable hitbox -- text + a little breathing room. */
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 14px;
+
+    transition-property: color, scale;
+    transition-duration: 0.12s, 0.12s;
+}
+
+/* Brighten the label on hover; the sliding '>' marker is added in code
+   (LobbyUIController.AttachButtonSfx) because USS has no ::before/content. */
+.unity-button:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Pressed feedback: accent color + slight squeeze. */
+.unity-button:active {
+    color: #FF1E2B;
+    scale: 0.97 0.97;
+}
+
+.unity-button:disabled {
+    opacity: 0.4;
+}
+
+/* --- TEXT FIELDS & INPUTS --- */
+.unity-base-text-field__input {
+    background-color: rgb(15, 15, 15);
+    color: rgb(255, 255, 255);
+    border-left-color: rgb(70, 70, 70);
+    border-right-color: rgb(70, 70, 70);
+    border-top-color: rgb(70, 70, 70);
+    border-bottom-color: rgb(70, 70, 70);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.unity-base-text-field__input:focus {
+    border-color: rgb(255, 0, 255); /* Magenta accent when typing */
+}
+
+/* --- RADIO BUTTONS & TOGGLES --- */
+.unity-radio-button__checkmark-background {
+    background-color: rgb(15, 15, 15);
+    border-color: rgb(70, 70, 70);
+}
+
+.unity-radio-button__checkmark {
+    background-color: #FF1E2B; /* Accent checkmark */
+}
+
+/* --- LIST VIEW (Player Lists) --- */
+.unity-list-view {
+    background-color: rgba(10, 10, 10, 0.6);
+    border-color: rgb(70, 70, 70);
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+/* --- CUSTOM CLASS FOR PANELS --- */
+/* You can assign this class to your generic translucent container panels to override your inline grey */
+.glass-panel {
+    background-color: rgba(20, 20, 25, 0.9);
+    border-top-width: 2px;
+    border-top-color: #FF1E2B;
+    border-radius: 8px;
+}
+
+/* --- HUD PANELS --- */
+.hud-panel {
+    background-color: rgba(20, 20, 25, 0.8);
+    border-top-width: 2px;
+    border-top-color: #FF1E2B;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+/* --- PROGRESS BARS --- */
+.unity-progress-bar {
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.unity-progress-bar__container {
+    min-height: 18px;
+}
+
+.unity-progress-bar__background {
+    background-color: rgba(20, 20, 25, 0.9);
+    border-color: rgb(70, 70, 70);
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.unity-progress-bar__progress {
+    background-color: #FF1E2B;
+    border-radius: 2px;
+}
+
+.unity-progress-bar__title-container {
+    justify-content: center;
+}
+
+.unity-progress-bar__title {
+    color: white;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.8);
+}
+
+.progress-bar-hp .unity-progress-bar__progress { background-color: #27ae60; }
+.progress-bar-xp .unity-progress-bar__progress { background-color: #2980b9; }
+.progress-bar-burden .unity-progress-bar__progress { background-color: #970101; }
+.progress-bar-heat .unity-progress-bar__progress { background-color: #e67e22; }
+.progress-bar-power .unity-progress-bar__progress { background-color: #ff0000; }
+.progress-bar-teleporter .unity-progress-bar__progress { background-color: #781eff; }

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 70fd74d8c739e6143b0af9127145f085
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - uiClick: {instanceID: 0}
+  - uiHover: {instanceID: 0}
+  - hitFleshLight: {instanceID: 0}
+  - hitFleshHeavy: {instanceID: 0}
+  - hitMetal: {instanceID: 0}
+  - enemyKillConfirm: {instanceID: 0}
+  - playerHurt: {instanceID: 0}
+  - weaponReload: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

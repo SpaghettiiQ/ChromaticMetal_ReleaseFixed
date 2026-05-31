@@ -1,0 +1,110 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Project/Features/LobbySystem/UI/LobbyStyles.uss?fileID=7433441132597879392&amp;guid=b29e81544d91bef4a9be4b97d65d9633&amp;type=3#LobbyStyles"/>
+    <ui:VisualElement name="Root" style="flex-grow: 1; -unity-font-definition: url(&quot;project://database/Assets/UI%20Resources/BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf?fileID=12800000&amp;guid=9f7323af40c61be45a5765e73f8a577a&amp;type=3#BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght&quot;);">
+        <ui:VisualElement name="HUDContainer" style="flex-grow: 1; margin-top: 18px; margin-right: 18px; margin-bottom: 18px; margin-left: 18px;">
+            <ui:VisualElement name="Centered" style="flex-grow: 1; width: 100%; height: 100%; position: absolute; justify-content: center; align-self: center; align-items: center;">
+                <ui:Image name="Crosshair" source="project://database/Assets/_Project/UI%20Resources/Crosshair.png?fileID=2800000&amp;guid=8daafad0ba9e6a7498660b0a886252ff&amp;type=3#Crosshair" style="flex-basis: 40px; align-self: center;"/>
+                <ui:Label text="Press E to interact" name="InteractPromptLabel" style="display: flex; -unity-text-align: upper-right; white-space: nowrap; align-self: flex-end; position: absolute; top: 630px; left: auto; flex-grow: 1; right: 64px;"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="Top" class="hud-panel" style="flex-grow: 0; width: 30%; align-self: center;">
+                <ui:ProgressBar value="22" title="" name="TeleporterChargeBar" class="progress-bar-teleporter" style="align-items: stretch; align-self: stretch; flex-grow: 1; flex-shrink: 1;"/>
+                <ui:Label text="Find the exit!" name="ObjectiveLabel" style="align-self: center; -unity-text-align: upper-center; margin-top: -27px;"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="TopRight" class="hud-panel" style="flex-grow: 0; align-self: flex-end; align-items: flex-end; justify-content: flex-start; flex-direction: column;">
+                <ui:Label text="0:00" name="MatchTimeLabel"/>
+                <ui:Label text="Stage 1" name="StageCounterLabel"/>
+                <ui:Label text="Loop 0" name="LoopCounterLabel"/>
+                <ui:Label text="Lv 1" name="DifficultyLevelLabel"/>
+                <ui:Label text="x1.00" name="DifficultyCoefficientLabel"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="Bottom" style="flex-grow: 1; flex-direction: row;">
+                <ui:VisualElement name="BottomLeft" class="hud-panel" style="flex-grow: 0; align-self: flex-end; justify-content: flex-end;">
+                    <ui:Label text="$0" name="MoneyLabel" style="-unity-text-align: upper-right; font-size: 18px;"/>
+                    <ui:VisualElement name="ProgressBarGroup" style="flex-grow: 1;">
+                        <ui:VisualElement name="Power" style="flex-grow: 1; flex-direction: row; align-self: stretch; justify-content: flex-start;">
+                            <ui:ProgressBar value="22" title="Presence Power" name="PowerBar" class="progress-bar-power" style="display: flex; align-items: stretch; flex-direction: row; flex-shrink: 1; min-width: 223px;"/>
+                            <ui:Label text="+0" name="PowerLabel" enable-rich-text="true" style="-unity-text-align: middle-left;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Burden" style="flex-grow: 1; flex-direction: row; align-self: stretch; justify-content: flex-start;">
+                            <ui:ProgressBar value="22" title="Burden" name="BurdenBar" class="progress-bar-burden" style="min-width: 223px;">
+                                <ui:Label text="|" name="TierIndicator1" style="position: absolute; top: auto; left: 25%; font-size: 12px; -unity-text-align: middle-left; margin-top: 0; margin-right: 0; padding-top: 20px; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-bottom: 0; margin-left: 0; color: rgb(255, 0, 0);"/>
+                                <ui:Label text="|" name="TierIndicator2" style="position: absolute; top: auto; left: 50%; font-size: 12px; -unity-text-align: middle-left; margin-top: 0; margin-right: 0; padding-top: 20px; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-bottom: 0; margin-left: 0; color: rgb(255, 0, 0); translate: 0 0; transform-origin: center;"/>
+                                <ui:Label text="|" name="TierIndicator3" style="position: absolute; top: auto; left: 80%; font-size: 12px; -unity-text-align: middle-left; margin-top: 0; margin-right: 0; padding-top: 20px; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-bottom: 0; margin-left: 0; color: rgb(255, 0, 0); translate: 0 0; transform-origin: center;"/>
+                                <ui:Label text="|" name="TierIndicator1" style="position: absolute; top: auto; left: 25%; font-size: 12px; -unity-text-align: middle-left; margin-top: -4px; margin-right: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-bottom: 0; margin-left: 0; color: rgb(255, 0, 0);"/>
+                                <ui:Label text="|" name="TierIndicator2" style="position: absolute; top: auto; left: 50%; font-size: 12px; -unity-text-align: middle-left; margin-top: -4px; margin-right: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-bottom: 0; margin-left: 0; color: rgb(255, 0, 0); translate: 0 0; transform-origin: center;"/>
+                                <ui:Label text="|" name="TierIndicator3" style="position: absolute; top: auto; left: 80%; font-size: 12px; -unity-text-align: middle-left; margin-top: -4px; margin-right: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-bottom: 0; margin-left: 0; color: rgb(255, 0, 0); translate: 0 0; transform-origin: center;"/>
+                            </ui:ProgressBar>
+                            <ui:Label text="20% - Tier 1" name="BurdenLabel" style="-unity-text-align: middle-left;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="HP" style="flex-grow: 1; flex-direction: row; align-self: stretch; justify-content: flex-start;">
+                            <ui:ProgressBar value="22" title="HP" name="HpBar" class="progress-bar-hp" style="min-width: 223px;"/>
+                            <ui:Label text="100 / 100" name="HpLabel" style="-unity-text-align: middle-left;"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="XP" style="flex-grow: 1; flex-direction: row; align-self: stretch; justify-content: flex-start; -unity-font-definition: url(&quot;project://database/Assets/UI%20Resources/BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf?fileID=12800000&amp;guid=9f7323af40c61be45a5765e73f8a577a&amp;type=3#BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght&quot;);">
+                            <ui:ProgressBar value="22" title="XP" name="XpBar" class="progress-bar-xp" style="-unity-font-definition: url(&quot;project://database/Assets/UI%20Resources/BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf?fileID=12800000&amp;guid=9f7323af40c61be45a5765e73f8a577a&amp;type=3#BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght&quot;); min-width: 223px;"/>
+                            <ui:Label text="0 - Level 1" name="XpLabel" style="-unity-text-align: middle-left;"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Spacer" style="flex-grow: 1;"/>
+                <ui:VisualElement name="BottomRight" class="hud-panel" style="flex-grow: 0; align-items: flex-end; align-self: flex-end; justify-content: flex-end;">
+                    <ui:Label text="Gun" name="WeaponNameLabel"/>
+                    <ui:VisualElement style="flex-grow: 1; align-self: auto; flex-direction: row;">
+                        <ui:ProgressBar value="22" title="Heat" name="WeaponHeatBar" class="progress-bar-heat"/>
+                        <ui:VisualElement name="AmmoContainer" style="flex-grow: 1; flex-direction: row; align-items: center; margin-bottom: 4px;">
+                            <ui:Label text="50  /  50" name="AmmoLabel"/>
+                            <ui:Image name="AmmoIcon" source="project://database/Assets/_Project/UI%20Resources/ammo.png?fileID=2800000&amp;guid=4957e75c588a587479e683708025c450&amp;type=3#ammo" scale-mode="ScaleToFit" tint-color="rgb(255, 255, 255)" style="width: 25px; height: 25px;"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="AbilitiesContainer" style="flex-grow: 1; flex-direction: row;">
+                        <ui:VisualElement style="flex-direction: column; align-items: center; justify-content: flex-end; width: 64px; height: 80px; margin-right: 8px;">
+                            <ui:VisualElement name="Slot1Container" style="width: 64px; height: 64px; background-color: rgba(0, 0, 0, 0.5);">
+                                <ui:VisualElement name="Ability1CooldownOverlay" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); position: absolute; bottom: 0;"/>
+                            </ui:VisualElement>
+                            <ui:Label text="M2" name="Ability1KeyLabel"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement style="flex-direction: column; align-items: center; justify-content: flex-end; width: 64px; height: 80px; margin-right: 8px;">
+                            <ui:VisualElement name="Slot2Container" style="width: 64px; height: 64px; background-color: rgba(0, 0, 0, 0.5);">
+                                <ui:VisualElement name="Ability2CooldownOverlay" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); position: absolute; bottom: 0;"/>
+                            </ui:VisualElement>
+                            <ui:Label text="Shift" name="Ability2KeyLabel"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement style="flex-direction: column; align-items: center; justify-content: flex-end; width: 64px; height: 80px;">
+                            <ui:VisualElement name="Slot3Container" style="width: 64px; height: 64px; background-color: rgba(0, 0, 0, 0.5);">
+                                <ui:VisualElement name="Ability3CooldownOverlay" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); position: absolute; bottom: 0;"/>
+                            </ui:VisualElement>
+                            <ui:Label text="R" name="Ability3KeyLabel"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="TabOverviewContainer" style="flex-grow: 1; position: absolute; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; flex-shrink: 1; right: auto; bottom: auto; left: auto; top: auto; height: 100%; width: 100%; display: none;">
+            <ui:VisualElement name="TabOverviewPanel" class="glass-panel" style="flex-grow: 1; margin-top: 128px; margin-right: 255px; margin-bottom: 128px; margin-left: 255px; flex-direction: row; padding-top: 9px; padding-right: 9px; padding-bottom: 9px; padding-left: 9px;">
+                <ui:VisualElement name="Side" style="flex-grow: 0;">
+                    <ui:Label text="Cleansers: Stage 1&#10;THRIVE: Stage 2" name="TeamProgressLabel"/>
+                    <ui:VisualElement name="PlayerListCleansersContainer" style="flex-grow: 1; margin-top: 16px;"/>
+                    <ui:VisualElement name="PlayerListThriveContainer" style="flex-grow: 1; margin-top: 16px;"/>
+                </ui:VisualElement>
+                <ui:ScrollView name="PlayerInventoryContainer" style="flex-grow: 1; padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="PauseMenuContainer" style="flex-grow: 1; position: absolute; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; flex-shrink: 1; right: auto; bottom: auto; left: auto; top: auto; height: 100%; width: 100%; display: flex; align-self: auto; align-items: center; justify-content: flex-start; align-content: auto; flex-direction: column;">
+            <ui:VisualElement name="PauseMenuPanel" class="glass-panel" style="flex-grow: 0; flex-direction: column; justify-content: flex-start; align-items: center; width: 50%; align-self: center; align-content: auto; padding-top: 50px; padding-right: 50px; padding-bottom: 50px; padding-left: 50px; aspect-ratio: auto; flex-shrink: 0; height: 55%; margin-top: 10%; margin-bottom: 10%;">
+                <ui:Image name="Logo" style="background-image: url(&quot;project://database/Assets/UI%20Resources/Game_Logo.png?fileID=2800000&amp;guid=3a2dd79e214627842813fc989124dd1e&amp;type=3#Game_Logo&quot;); background-size: 100% 200%; flex-grow: 1; align-self: stretch; margin-top: 13px; margin-right: 13px; margin-bottom: 13px; margin-left: 13px; -unity-background-scale-mode: scale-and-crop; flex-shrink: 0;"/>
+                <ui:Button text="Resume" name="ResumeButton" style="margin-bottom: 20px; font-size: 50px; align-items: stretch; align-self: flex-start;"/>
+                <ui:Button text="Leave Match" name="LeaveMatchButton" style="font-size: 50px; align-self: flex-start;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="EndScreenContainer" style="flex-grow: 1; position: absolute; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; flex-shrink: 1; right: auto; bottom: auto; left: auto; top: auto; height: 100%; width: 100%; display: none;">
+            <ui:VisualElement name="EndScreenPanel" class="glass-panel" style="flex-grow: 1; margin-top: 30px; margin-right: 54px; margin-bottom: 39px; margin-left: 54px; flex-direction: column; padding-top: 9px; padding-right: 9px; padding-bottom: 9px; padding-left: 9px; justify-content: flex-start; align-items: stretch;">
+                <ui:Label text="Victory" name="ResultLabel" style="font-size: 64px; -unity-text-align: upper-center;"/>
+                <ui:VisualElement name="Content" style="flex-grow: 1; flex-direction: row;">
+                    <ui:ScrollView name="ItemsContainer" style="width: 70%;"/>
+                    <ui:VisualElement name="StatsContainer" style="flex-grow: 1; -unity-font-definition: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=e5de88c1a82bb4e40a73f2be1ebff5da&amp;type=3#NotInter-Regular&quot;);"/>
+                </ui:VisualElement>
+                <ui:Button text="Leave Match" name="LeaveMatchButton" style="align-items: flex-end; align-self: flex-end; min-height: 47px; min-width: 207px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

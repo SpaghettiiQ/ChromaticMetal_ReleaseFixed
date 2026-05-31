@@ -1,0 +1,25 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; padding-top: 1%; padding-right: 2%; padding-bottom: 1%; padding-left: 2%; font-size: 18px;">
+        <ui:VisualElement style="flex-direction: row; align-items: center; margin-bottom: 8px;">
+            <ui:Button text="Back" name="Btn_Back" style="font-size: 18px; margin-right: 18px;"/>
+            <ui:Label text="Journal" name="Lbl_Title" style="font-size: 30px; -unity-font-style: bold;"/>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement style="width: 30%; min-width: 240px; margin-right: 16px; flex-direction: column;">
+                <ui:Label text="Categories" style="font-size: 18px; -unity-font-style: bold; margin-bottom: 4px;"/>
+                <ui:VisualElement name="Container_Categories" style="flex-direction: column; margin-bottom: 12px;"/>
+                <ui:Label text="Entries" style="font-size: 18px; -unity-font-style: bold; margin-bottom: 4px;"/>
+                <ui:ScrollView name="Container_EntryList" style="flex-grow: 1; min-height: 100px;"/>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; flex-direction: column; padding-left: 16px; border-left-width: 1px; border-left-color: rgba(255, 255, 255, 0.15);">
+                <ui:VisualElement style="flex-direction: row; align-items: center; margin-bottom: 8px;">
+                    <ui:Image name="Image_Icon" style="width: 48px; height: 48px; margin-right: 12px;"/>
+                    <ui:Label text="" name="Label_Title" style="font-size: 28px; -unity-font-style: bold;"/>
+                </ui:VisualElement>
+                <ui:ScrollView style="flex-grow: 1; -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;);">
+                    <ui:Label text="" name="Label_Body" style="white-space: normal; font-size: 16px;"/>
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

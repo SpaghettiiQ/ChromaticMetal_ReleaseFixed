@@ -1,0 +1,32 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Container" style="flex-grow: 1; justify-content: flex-end; -unity-font-definition: url(&quot;project://database/Assets/UI%20Resources/BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf?fileID=12800000&amp;guid=9f7323af40c61be45a5765e73f8a577a&amp;type=3#BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght&quot;);">
+        <ui:ScrollView name="Scrl_CharacterInfo" class="glass-panel" style="flex-grow: 1; width: 40%; margin-left: 32px; margin-top: 32px; margin-bottom: 32px; margin-right: 32px; padding-top: 9px; padding-right: 9px; padding-bottom: 9px; padding-left: 9px; -unity-font-definition: url(&quot;project://database/Assets/UI%20Resources/BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf?fileID=12800000&amp;guid=9f7323af40c61be45a5765e73f8a577a&amp;type=3#BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght&quot;);"/>
+        <ui:VisualElement name="Container_Row" style="flex-grow: 0; flex-direction: row; align-items: flex-end;">
+            <ui:VisualElement name="Container_Column" style="flex-grow: 1; margin-left: 29px; margin-bottom: 20px;">
+                <ui:Label text="Available Proxies" name="Title_Proxies" style="font-size: 24px; align-self: flex-start; margin-left: 12px;"/>
+                <ui:GroupBox name="Grid_Characters" style="flex-direction: row; align-self: flex-start;">
+                    <ui:VisualElement name="ProxySlot" style="flex-grow: 1; align-items: flex-start; align-self: flex-start;">
+                        <ui:Image source="project://database/Assets/UI%20Resources/Placeholder_Team_Logo.png?fileID=2800000&amp;guid=acaa7ad01c574f349a7a93892165907a&amp;type=3#Placeholder_Team_Logo" style="width: 70px; height: 70px;"/>
+                        <ui:Label text="Proxy" style="font-size: 24px; align-items: auto; align-self: flex-start;"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ProxySlot" style="flex-grow: 1; align-items: flex-start; align-self: flex-start;">
+                        <ui:Image source="project://database/Assets/UI%20Resources/Placeholder_Team_Logo.png?fileID=2800000&amp;guid=acaa7ad01c574f349a7a93892165907a&amp;type=3#Placeholder_Team_Logo" style="width: 70px; height: 70px;"/>
+                        <ui:Label text="Proxy" style="font-size: 24px; align-items: auto; align-self: flex-start;"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ProxySlot" style="flex-grow: 1; align-items: flex-start; align-self: flex-start;">
+                        <ui:Image source="project://database/Assets/UI%20Resources/Placeholder_Team_Logo.png?fileID=2800000&amp;guid=acaa7ad01c574f349a7a93892165907a&amp;type=3#Placeholder_Team_Logo" style="width: 70px; height: 70px;"/>
+                        <ui:Label text="Proxy" style="font-size: 24px; align-items: auto; align-self: flex-start;"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ProxySlot" style="flex-grow: 1; align-items: flex-start; align-self: flex-start;">
+                        <ui:Image source="project://database/Assets/UI%20Resources/Placeholder_Team_Logo.png?fileID=2800000&amp;guid=acaa7ad01c574f349a7a93892165907a&amp;type=3#Placeholder_Team_Logo" style="width: 70px; height: 70px;"/>
+                        <ui:Label text="Proxy" style="font-size: 24px; align-items: auto; align-self: flex-start;"/>
+                    </ui:VisualElement>
+                </ui:GroupBox>
+            </ui:VisualElement>
+            <ui:VisualElement name="Container" style="flex-grow: 1; flex-direction: row; align-self: flex-end; justify-content: flex-end; margin-bottom: 47px; margin-right: 123px;">
+                <ui:Button text="Lock In" name="Btn_LockIn" style="font-size: 24px;"/>
+                <ui:Label text="3:00" name="Text_Timer" style="align-self: flex-end; font-size: 36px; -unity-text-align: upper-right; margin-left: 34px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
